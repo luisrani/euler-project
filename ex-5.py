@@ -3,9 +3,11 @@ def gcd(a: int, b: int) -> int:
         a, b = b, a % b
     return a
 
+
 ans: int = 1
 
 for n in range(1, 21):
-    ans = (ans * n)//gcd(ans, n)
+    ans = (ans * n) // gcd(ans, n)
 
-print(ans)
+if __name__ == "__main__":
+    print(ans)
