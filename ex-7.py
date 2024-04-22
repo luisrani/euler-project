@@ -7,4 +7,5 @@ while idx != 10_001:
     if len([d for d in range(2, int(ans**0.5) + 1) if ans % d == 0]) == 0:
         idx += 1
 
-print(ans)
+if __name__ == "__main__":
+    print(ans)
